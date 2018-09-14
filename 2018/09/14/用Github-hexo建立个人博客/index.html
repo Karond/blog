@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="用Github+hexo建立个人博客"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="karond"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://karond.github.io/blog"/>
+  
+    <link rel="alternate" href="/atom.xml" title="karond" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>karond</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/blog/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/blog/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/blog//img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">用Github+hexo建立个人博客</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/blog/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/blog/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/Karond">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:dingyaohui.g@outlook.com">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By John Doe</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-09-14</span>
+            <span class="time">16:02:44</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>node.js与git是关键前提，如果没有安装，请点击链接安装对应版本。</p>
+<p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a></p>
+<p><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a></p>
+<a id="more"></a>
+<hr>
+<h2 id="使用npm来安装hexo："><a href="#使用npm来安装hexo：" class="headerlink" title="使用npm来安装hexo："></a>使用npm来安装hexo：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+<p>安装结束后使用<code>hexo -v</code>查看版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo: 3.7.1</span><br><span class="line">hexo-cli: 1.1.0</span><br><span class="line">os: Windows_NT 10.0.17134 win32 x64</span><br><span class="line">http_parser: 2.8.0</span><br><span class="line">node: 8.12.0</span><br><span class="line">v8: 6.2.414.66</span><br><span class="line">uv: 1.19.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">ares: 1.10.1-DEV</span><br><span class="line">modules: 57</span><br><span class="line">nghttp2: 1.32.0</span><br><span class="line">napi: 3</span><br><span class="line">openssl: 1.0.2p</span><br><span class="line">icu: 60.1</span><br><span class="line">unicode: 10.0</span><br><span class="line">cldr: 32.0</span><br><span class="line">tz: 2017c</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h2><p>创建一个文件夹，在文件夹中执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>会生成如下目录结构</p>
+<img src="/blog/2018/09/14/用Github-hexo建立个人博客/1.JPG">
+<p>使用<code>hexo g</code>生成相关文件,<br>然后<code>hexo s</code> 启动一个本地服务器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure></p>
+<p>打开<code>http://localhost:4000</code>就可以预览网站了</p>
+<hr>
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>在官网中的<a href="https://hexo.io/themes/" target="_blank" rel="noopener">themes</a>中选择自己喜欢的主题，使用git工具将主题库克隆到本地themes文件夹中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: Themes_Name</span><br></pre></td></tr></table></figure></p>
+<p>只要将<code>_config.yml</code>文件中<code>theme</code>的参数修改成自己的主题文件夹名字，使用<code>hexo g</code>重新生成</p>
+<p>大功快要告成了</p>
+<hr>
+<h2 id="部署到GitHub中"><a href="#部署到GitHub中" class="headerlink" title="部署到GitHub中"></a>部署到GitHub中</h2><p>首先为了能在Github中运行需要修改参数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</span><br><span class="line">url: https://karond.github.io/blog/</span><br><span class="line">root: /blog</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure></p>
+<p>修改url为<code>GitHub Pages</code>中提供的链接，<code>root</code>修改为你的项目名称</p>
+<p>然后需要安装一个用于hexo部署的插件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>最后一次修改<code>_config.yml</code>配置文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: 你的项目地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>现在可以使用一下命令自动提交啦<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成"></a>大功告成</h2><p>现在使用<code>hexo n &lt;文章标题&gt;</code>创建第一篇文章，会自动在<code>\source\_posts\</code>目录下创建一个对应的md文件，现在就可以使用markdown编辑器开始写文章啦，<br>结束时使用<code>hexo g</code>生成文件，使用<code>hexo d</code>发布</p>
+<p>OK</p>
+<hr>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>hexo中不能使用markdown中引用图片的方式</p>
+<p>修改<code>_config.yml</code>配置文件<code>post_asset_folder</code>项为<code>true</code></p>
+<p>这时使用<code>hexo n &lt;文章标题&gt;</code>创建文章会创建一个文件夹，此时在md文件中使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img 这是一个新的博客的图片.jpg 这是一个新的博客的图片的说明 %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>引用文件夹中的图片</p>
+<p>详情见：<a href="https://www.jianshu.com/p/cf0628478a4e" target="_blank" rel="noopener">Hexo发布博客引用自带图片的方法</a></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/blog/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
